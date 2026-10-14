@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #243047;
+    line-height: 1.7;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #14213d;
+    color: white;
+    gap: 20px;
+}
+
+.logo {
+    color: #58d5c9;
+    font-size: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #58d5c9;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background: linear-gradient(135deg, #14213d, #254d75);
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.intro {
+    color: #58d5c9;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    color: #58d5c9;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #58d5c9;
+    color: #14213d;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: white;
+}
+
+.section {
+    padding: 65px 10%;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #14213d;
+}
+
+#about > p,
+#contact > p {
+    max-width: 800px;
+    margin: 0 auto 15px;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-card,
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(20, 33, 61, 0.08);
+}
+
+.skill-card {
+    text-align: center;
+}
+
+.skill-card h3,
+.project-card h3 {
+    color: #167d87;
+    margin-bottom: 10px;
+}
+
+.project-card {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#contact a {
+    color: #167d87;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #14213d;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 60px 7%;
+    }
+
+    .section {
+        padding: 45px 7%;
+    }
+}
